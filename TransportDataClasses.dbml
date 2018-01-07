@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Transport" Class="TransportDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=Transport;Integrated Security=True" SettingsObjectName="transport.Properties.Settings" SettingsPropertyName="TransportConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ruch" Member="Ruches">
+    <Type Name="Ruch">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nr_przystanku" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="wsiadlo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="wysiadlo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="stan_po" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="czas" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
